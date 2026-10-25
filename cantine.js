@@ -24,23 +24,23 @@ function calculerMontantTotal(prixUnitaire, quantite) {
     return quantite * prixUnitaire;
 }
 // appel de la fonction
-let total à payer = calculerMontantTotal(prixunitaire,quantité);
+let totalpayer = calculerMontantTotal(prixUnitaire, quantite);
 // Affichage du récapitulatif
 console.log(`Client : ${client}`);
 console.log(`Plat commandé : ${nomPlat} (${prixUnitaire} fcfa)`);
 console.log(`Quantité : ${quantite}`);
-console.log(`Montant total : ${total à payer}`);
+console.log(`Montant total : ${totalpayer}`);
 console.log(`---détail par portion---`);
 // Boucle For pour afficher une ligne de portion commandée
 for (let i=1; i<=quantite; i++) {
     console.log(`Portion ${i} : ${nomPlat}-${prixUnitaire} fcfa`); 
 }
-console.log(`Total à payer : ${total à payer} fcfa`);
+console.log(`Total à payer : ${totalpayer} fcfa`);
 //monnaie ou montant manquant
-if (montantVerse >= total à payer) {
-    let monnaie = montantVerse - total à payer;
+if (montantVerse >= totalpayer) {
+    let monnaie = montantVerse - totalpayer;
     console.log(`Monnaie à rendre : ${monnaie} FCFA`);
 } else {
-    let montantManquant = total à payer - montantVerse;
+    let montantManquant = totalpayer - montantVerse;
     console.log(`Montant manquant : ${montantManquant} FCFA`);
 }

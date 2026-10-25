@@ -1,0 +1,2 @@
+NOM : OBA M'BOULA GHISLAIN ROCK 
+PRESENTATION DU PROJET : Ce projet en javascript permet de calculer le montant d'une commande passée à la cantine,d'afficher un récapitulatif détaillé portion par portion dans le terminal,et de gérer le calcul de la monnaie à rendre ou du montant manquant . 
