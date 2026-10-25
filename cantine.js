@@ -1,9 +1,9 @@
 // Données de la commande
 let client = "Awa";
-let codePlat = 1;
-let quantitetext = "3";
+let codePlat = 3;
+let quantitetext = "4";
 let quantite = Number(quantitetext);
-let montantVerse = 5000;
+let montantVersé = 4000;
 let nomPlat = "";
 let prixUnitaire = 0;
 //Détermination du plat et du prix unitaire) {
@@ -14,7 +14,7 @@ if (codePlat === 1) {
     nomPlat = "Riz-poulet";
     prixUnitaire = 2000;
 } else if (codePlat === 3) {
-    nomPlat = "Alloco-oeuff";
+    nomPlat = "Alloco-oeuf";
     prixUnitaire = 1000;
 }else{
     console.log("Code plat invalide");
@@ -36,11 +36,12 @@ for (let i=1; i<=quantite; i++) {
     console.log(`Portion ${i} : ${nomPlat}-${prixUnitaire} fcfa`); 
 }
 console.log(`Total à payer : ${totalpayer} fcfa`);
+console.log(`montant versé : ${montantVersé} fcfa`);
 //monnaie ou montant manquant
-if (montantVerse >= totalpayer) {
-    let monnaie = montantVerse - totalpayer;
+if (montantVersé >= totalpayer) {
+    let monnaie = montantVersé - totalpayer;
     console.log(`Monnaie à rendre : ${monnaie} FCFA`);
 } else {
-    let montantManquant = totalpayer - montantVerse;
+    let montantManquant = totalpayer - montantVersé;
     console.log(`Montant manquant : ${montantManquant} FCFA`);
 }
