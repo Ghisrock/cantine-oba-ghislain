@@ -24,3 +24,5 @@ if (codePlat === 1) {
 function calculerMontantTotal() {
     return quantite * prixUnitaire;
 }
+// appel de la fonction
+let total = calculerMontantTotal(prixunitaire,quantitte);
