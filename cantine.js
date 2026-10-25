@@ -32,3 +32,8 @@ console.log(`Plat commandé : ${nomPlat} (${prixUnitaire} fcfa)`);
 console.log(`Quantité : ${quantite}`);
 console.log(`Montant total : ${total}`);
 console.log(`---détail par portion---`);
+// Boucle For pour afficher une ligne de portion commandée
+for (let i=1; i<=quantite; i++) {
+    console.log(`Portion ${i} : ${nomPlat}-${prixUnitaire} fcfa`); 
+}
+console.log(`Total:${total} fcfa`);
