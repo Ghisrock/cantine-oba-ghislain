@@ -25,4 +25,10 @@ function calculerMontantTotal() {
     return quantite * prixUnitaire;
 }
 // appel de la fonction
-let total = calculerMontantTotal(prixunitaire,quantitte);
+let total = calculerMontantTotal();
+// Affichage du récapitulatif
+console.log(`Client : ${client}`);
+console.log(`Plat commandé : ${nomPlat} (${prixUnitaire} fcfa)`);
+console.log(`Quantité : ${quantite}`);
+console.log(`Montant total : ${total}`);
+console.log(`---détail par portion---`);
