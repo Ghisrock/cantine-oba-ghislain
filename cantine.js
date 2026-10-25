@@ -20,3 +20,7 @@ if (codePlat === 1) {
 }else{
     console.log("Code plat invalide");
 }
+//Fonction pour calculer le montant total de la commande
+function calculerMontantTotal() {
+    return quantite * prixUnitaire;
+}
